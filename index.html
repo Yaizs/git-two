@@ -2,8 +2,92 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ce217ca2a3.js"
+      crossorigin="anonymous"
+    ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git Two</title>
+    <title>Shiro's Website</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="shiro-logo">
+        <img src="images/LogoShiro.png" alt="Shiro Logo" width="150" />
+      </div>
+      <nav class="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about-me">About Me</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button>Buy Me Treats!</button>
+    </header>
+
+    <section class="home" id="home">
+      <div class="shiro-pic">
+        <img src="images/ShiroPicz.jpg" alt="Cute Picture of Shiro the Dog" />
+      </div>
+      <div class="hello">
+        <h1>Hello, <br />I am <span class="blue">Shiro</span>!</h1>
+        <br />
+        <p>
+          I am a cute dog who loves to sleep and eat chimken. I am capable of
+          doing a lot of amazing things, so pls learn about me through this
+          website. Also pls give me money for treats ty. My momy will be happy
+          if I will be able to buy me my own treats.
+        </p>
+
+        <button>Buy Me Treats!</button>
+      </div>
+    </section>
+
+    <section class="about-me" id="about-me">
+      <div>
+        <h1>About <span class="blue">me</h1></span></h1>
+        <p>I’m a fluffy, cute doggo who loves three things:</p>
+
+        <ul>
+          <li>Chimken (my absolute favorite snack!)</li>
+          <li>Being adorable (it’s my full-time job)</li>
+          <li>Sleeping (I can nap anywhere, anytime)</li>
+        </ul>
+        <p>
+          When I’m not dreaming about chimken, you can usually find me curled up
+          in my favorite spot, snoozing away. I believe life is best enjoyed
+          with a full belly, a cozy nap, and lots of tail wags. If you bring me
+          chimken, we’ll be best friends forever.
+        </p>
+      </div>
+      <img src="images/457617948_490064150553807_2006572626745272583_n.jpg" />
+    </section>
+
+    <section id="gallery">
+      <div>
+      <h1>Shiro <span class="blue">Pics</span></h1>
+      <div class="slider">
+        <div class="slides">
+          <img src="images/552217052_665754709904352_5359964441002662301_n.jpg" class="slide">
+          <img src="images/457617948_490064150553807_2006572626745272583_n.jpg" class="slide">
+          <img src="images/ShiroPicz.jpg" class="slide">
+          <button class="prevBtn" onclick="prevSlide()">&#10094</button>
+          <button class="nextBtn" onclick="nextSlide()">&#10095</button>
+        </div>
+      </div>
+    </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
